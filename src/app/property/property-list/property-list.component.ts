@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./property-list.component.css'],
 })
 export class PropertyListComponent implements OnInit {
-  Property: Array<any> = [
+  properties: Array<any> = [
     {
       Id: 1,
       Name: 'Karkis',
@@ -36,6 +36,12 @@ export class PropertyListComponent implements OnInit {
       Name: 'Ucumi Inc',
       Type: 'House',
       Price: 26000,
+    },
+    {
+      Id: 6,
+      Name: 'Keizen Br',
+      Type: 'House',
+      Price: 45000,
     },
   ];
 
