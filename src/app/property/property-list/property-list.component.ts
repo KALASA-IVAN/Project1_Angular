@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class PropertyListComponent implements OnInit {
   properties: Array<any>;
 
+  today  nothing has been done it's jus just to keep my streak on github
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
