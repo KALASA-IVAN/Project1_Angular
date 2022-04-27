@@ -7,12 +7,13 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./property-list.component.css'],
 })
 export class PropertyListComponent implements OnInit {
-  properties: Array<any>;
+  properties: any;
 
   constructor(private httpClient: HttpClient) {}
 
   ngOnInit(): void {
     this.httpClient.get('assets/properties.json').subscribe((data) => {
+      this.properties = data;
       console.log(data);
     });
   }
