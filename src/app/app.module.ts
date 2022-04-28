@@ -7,14 +7,16 @@ import { NavBarComponent } from './property/nav-bar/nav-bar.component';
 import { PropertyCardComponent } from './property/property-card/property-card.component';
 import { PropertyListComponent } from './property/property-list/property-list.component';
 import { HousingService } from './services/housing.service';
+import { AddPropertyComponent } from './add-property/add-property.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     PropertyCardComponent,
     PropertyListComponent,
     NavBarComponent,
-  ],
+      AddPropertyComponent
+   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [HousingService],
   bootstrap: [AppComponent],
