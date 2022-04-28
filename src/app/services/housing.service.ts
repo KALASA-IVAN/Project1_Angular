@@ -1,9 +1,14 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HousingService {
+  constructor(private httpClient: HttpClient) { }
 
-  constructor() { }
+  
+  getAllProperties() {
+    return this.httpClient.get('assets/properties.json');
+  }
 }
