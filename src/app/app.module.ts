@@ -15,21 +15,22 @@ const appRoutes: Routes = [
   { path: 'rent-property', component: PropertyListComponent },
   { path: '', component: PropertyListComponent },
   { path: 'add-property', component: AddPropertyComponent },
+  { path: 'property-details/:id', component: PropertyDetailsComponent },
 ];
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     PropertyCardComponent,
     PropertyListComponent,
     NavBarComponent,
     AddPropertyComponent,
-      PropertyDetailsComponent
-   ],
+    PropertyDetailsComponent,
+  ],
 
   imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(appRoutes)],
   providers: [HousingService],
   bootstrap: [AppComponent],
 })
-
+  
 export class AppModule {}
