@@ -32,5 +32,5 @@ const appRoutes: Routes = [
   providers: [HousingService],
   bootstrap: [AppComponent],
 })
-  
+
 export class AppModule {}
